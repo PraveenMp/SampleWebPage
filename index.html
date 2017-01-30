@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .sub-tab {
+    padding: 15px;
+        }
+        .sub-tab.active.in {
+                position: absolute;
+    width: 97%;
+    top: 0;
+    z-index: 5555;
+        }
+        .tab-content>.active {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+        .sub-ul {
+                border-right: 1px solid #ccc;
+    margin-bottom: 0px;
+    padding: 17px;
+    list-style-type: none;
+        min-height: 300px;
+        }
+        .sub-ul  li {
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    margin: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                    <ul class="nav nav-tabs" id="myTabs" role="tablist" style="padding-left: 187px;">
+<li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">TAB 1</a></li>
+<li role="presentation"><a href="#tab2" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">TAB 2</a></li>
+<li role="presentation"><a href="#tab3" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">TAB 3</a></li>
+<li role="presentation"><a href="#tab4" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">TAB 4</a></li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade active in" role="tabpanel" id="tab1">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="sub-ul" id="myTabs" role="tablist">
+                    <li><a role="presentation" href="#dropdown1" role="tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">Link 1</a></li>
+                    <li><a role="presentation" href="#dropdown2" role="tab" data-toggle="tab" aria-controls="dropdown2" aria-expanded="false">Link 2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-pane active in fade sub-tab" role="tabpanel" id="dropdown1">
+                    <p>
+                        <form class="form-inline">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </form>
+
+                        </form>
+                    </p>
+                </div>
+                <div class="tab-pane fade sub-tab" role="tabpanel" id="dropdown2">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse
+                        gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore
+                        wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold
+                        out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats
+                        keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" role="tabpanel" id="tab2">
+               <div class="row">
+            <div class="col-md-2">
+                <ul class="sub-ul" id="myTabs" role="tablist">
+                    <li><a role="presentation" href="#dropdown12" role="tab" data-toggle="tab"aria-expanded="true">Link 1</a></li>
+                    <li><a role="presentation" href="#dropdown22" role="tab" data-toggle="tab"  aria-expanded="false">Link2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-pane fade sub-tab" role="tabpanel" id="dropdown12">
+                    <p>
+                        <form class="form-inline">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </form>
+
+                        </form>
+                    </p>
+                </div>
+                <div class="tab-pane fade sub-tab" role="tabpanel" id="dropdown22">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse
+                        gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore
+                        wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold
+                        out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats
+                        keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" role="tabpanel" id="tab3">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="sub-ul" id="myTabs" role="tablist">
+                    <li><a role="presentation" href="#dropdown123" role="tab" data-toggle="tab"aria-expanded="true">Link 1</a></li>
+                    <li><a role="presentation" href="#dropdown223" role="tab" data-toggle="tab"  aria-expanded="false">Link2</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-pane fade sub-tab" role="tabpanel" id="dropdown123">
+                    <p>
+                        <form class="form-inline">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </form>
+
+                        </form>
+                    </p>
+                </div>
+                <div class="tab-pane fade sub-tab" role="tabpanel" id="dropdown223">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse
+                        gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore
+                        wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold
+                        out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats
+                        keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" role="tabpanel" id="tab4">
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+            blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+            booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud
+            organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente
+            labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical
+            culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus
+            tattooed echo park.</p>
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
